@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HomePage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CSS slick carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!--CSS LIBS-->
+    <link rel="stylesheet" href="../../Assets/Vendors/CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Assets/Vendors/CSS/bootstrap.min.css">
+    <!--CSS CUSTOM-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../Assets/CSS/index.css" />
+</head>
+
+<body>
+    <header>
+        <div id="top" class="bg-light">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="mr-auto pt-3">
+                        <div class="hotline user">SDT: 0121 596 1318</div>
+                    </div>
+                    <div class="pt-2">
+                        <button type="button" class="btn bg-light text-dark user" data-toggle="modal" data-target="#sign-in">
+                            <i class="fa fa-lock"></i>
+                            <span>Đăng nhập</span>
+                        </button>
+                        <button type="button" class="btn bg-light text-dark user" data-toggle="modal" data-target="#sign-up">
+                            <i class="fa fa-user"></i>
+                            <span>Đăng ký</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../../Assets/IMG/logo.png" alt="logo" width="150px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Trang chủ
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Khóa học</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <a class="dropdown-item" href="#">
+                                                    Lập trình - Thiết kế Web
+                                                    <span>
+                                                        <a href="#" class="dropdown-item">abc</a>
+                                                        <a href="#" class="dropdown-item">abc</a>
+                                                        <a href="#" class="dropdown-item">abc</a>
+                                                    </span>
+                                                </a>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <a class="dropdown-item" href="#">
+                                                    Thiết kế đồ họa
+                                                    <span>
+                                                        <a href="#" class="dropdown-item">abc</a>
+                                                        <a href="#" class="dropdown-item">abc</a>
+                                                        <a href="#" class="dropdown-item">abc</a>
+                                                    </span>
+                                                </a>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <a class="dropdown-item" href="#">
+                                                    Tin học văn phòng
+                                                    <span>
+                                                        <a href="#" class="dropdown-item">abc</a>
+                                                        <a href="#" class="dropdown-item">abc</a>
+                                                        <a href="#" class="dropdown-item">abc</a>
+                                                    </span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Thư viện</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kích hoạt khóa học</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!--carousel-->
+    <section id="carousel">
+        <div class="container">
+            <div class="carousel">
+                <div>
+                    <img src="../../Assets/IMG/Ads-FB-1301x603.png" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="../../Assets/IMG/20137786_897888267015957_2064916575_o-1.png" class="img-fluid" alt="">
+                </div>
+                <div>your content</div>
+            </div>
+        </div>
+    </section>
+    <!--carousel end-->
+
+    <!--course-->
+    <!--course end-->
+
+    <!--Modal sign in-->
+    <div class="modal" id="sign-in">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign In</h4>
+                    <button type="button " class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="container">
+                            <div class="form-group">
+                                <label for="mail">Username</label>
+                                <input type="text" class="form-control" placeholder="Enter Username" name="mail">
+                                <span class="notifyUsername"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" placeholder="Enter Password" id="pwd">
+                                    <span class="notifyPassword"></span>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal sign in end-->
+
+    <!--Modal sign up-->
+    <div class="modal" id="sign-up">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Đăng ký</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="container">
+                            <div class="form-group">
+                                <label for="username">Tên tài khoản:</label>
+                                <input type="text" class="form-control" placeholder="Enter Username" name="username">
+                                <span class="notifyUsername "></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Mật khẩu:</label>
+                                <input type="password" class="form-control" placeholder="Enter Password" id="pwd">
+                                <span class="notifyPassword "></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="date">Ngày sinh:</label>
+                                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="datetime-local" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="password" class="form-controL" placeholder="Enter Password" id="email">
+                                <span class="notifyPassword"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại:</label>
+                                <input type="password" class="form-control" placeholder="Enter Password" id="phone">
+                                <span class="notifyPassword"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Đăng ký</button>
+                            <button type="reset" class="btn btn-info">Nhập lại</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal sign up end-->
+
+
+    <!--JS LIBS-->
+    <script src="../../Assets/Vendors/JS/jquery.min.js "></script>
+    <script src="../../Assets/Vendors/JS/popper.min.js "></script>
+    <script src="../../Assets/Vendors/JS/bootstrap.min.js "></script>
+    <!--JS slick carousel-->
+    <script type="text/javascript" src="../../Assets/JS/jquery-migrate.min.js"></script>
+    <script src="../../Assets/JS/slick.min.js"></script>
+    <script src="../../Assets/JS/carousel.js"></script>
+    <!--JS CUSTOM-->
+    <script src="../../Assets/JS/navbar.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+#top{
+    height: 50px;
+    background-color: #E9EBEE;
+}
+.user{
+    font-size: 13px;
+}
+
+/* thêm margin cho đường link  */
+.navbar .dropdown-menu div[class*="col"] {
+    margin-bottom:1rem;
+ }
+ 
+ .navbar .dropdown-menu {
+   border:none;
+   background-color:#0060c8!important;
+ }
+ 
+ /* đặt breakpoint cho mega dropdown */
+ @media screen and (min-width: 992px) {
+ .navbar {
+   padding-top:0px;
+   padding-bottom:0px;
+ }
+ 
+ /* thêm padding cho các thành phần*/
+ .navbar .nav-item {
+   padding:.5rem .5rem;
+   margin:0 .25rem;
+ }
+ 
+ /* làm cho dropdown nav full màn hình  */
+ .navbar .dropdown {position:static;}
+ 
+ .navbar .dropdown-menu {
+   width:100%;
+   left:0;
+   right:0;
+   top:75px;
+ }
+   
+   /* chỉ cần hover sẽ show ra dropdown nav */
+ .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+   display:block!important;
+ }
+   
+   .navbar .dropdown-menu {
+     border: 1px solid rgba(0,0,0,.15);
+     background-color: #fff;
+   }
+ 
+ }
+ 
+ 
