@@ -142,17 +142,17 @@
                         <div class="container">
                             <div class="form-group">
                                 <label for="mail">Username</label>
-                                <input type="text" class="form-control" placeholder="Enter Username" name="mail">
-                                <span class="notifyUsername"></span>
+                                <input type="text" class="form-control" placeholder="Enter Username" name="mail" id="txtTaiKhoan">
+                                <span class="tbUserName"></span>
                             </div>
                             <div class="form-group">
                                 <div class="form-group">
                                     <label for="pwd">Password:</label>
                                     <input type="password" class="form-control" placeholder="Enter Password" id="pwd">
-                                    <span class="notifyPassword"></span>
+                                    <span class="tbpassword"></span>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary">Sign In</button>
+                            <button type="button" class="btn btn-primary" id="btnDangNhap">Sign In</button>
                         </div>
                     </form>
                 </div>
@@ -174,29 +174,30 @@
                         <div class="container">
                             <div class="form-group">
                                 <label for="username">Tên tài khoản:</label>
-                                <input type="text" class="form-control" placeholder="Enter Username" name="username">
-                                <span class="notifyUsername "></span>
+                                <input type="text" class="form-control" placeholder="Nhập tài khoản" name="username" id="dkTaiKhoan">
+                                <span class="tbdkTaiKhoan "></span>
                             </div>
                             <div class="form-group">
                                 <label for="pwd">Mật khẩu:</label>
-                                <input type="password" class="form-control" placeholder="Enter Password" id="pwd">
-                                <span class="notifyPassword "></span>
+                                <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="dkPWD">
+                                <span class="tbdkPasswork "></span>
                             </div>
                             <div class="form-group">
                                 <label class="control-label" for="date">Ngày sinh:</label>
                                 <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="datetime-local" />
+                                <span class="tbdkNgaySinh"></span>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email:</label>
-                                <input type="password" class="form-controL" placeholder="Enter Password" id="email">
-                                <span class="notifyPassword"></span>
+                                <input type="email" class="form-control" placeholder="Nhập email" id="email">
+                                <span class="tbdkemail"></span>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Số điện thoại:</label>
-                                <input type="password" class="form-control" placeholder="Enter Password" id="phone">
-                                <span class="notifyPassword"></span>
+                                <input type="number" class="form-control" placeholder="Nhập số điện thoại" id="phone">
+                                <span class="tbdksodt"></span>
                             </div>
-                            <button type="submit" class="btn btn-primary">Đăng ký</button>
+                            <button type="button" class="btn btn-primary" id="btnDangKy">Đăng ký</button>
                             <button type="reset" class="btn btn-info">Nhập lại</button>
                         </div>
                     </form>
@@ -212,11 +213,11 @@
     <script src="../../Assets/Vendors/JS/popper.min.js "></script>
     <script src="../../Assets/Vendors/JS/bootstrap.min.js "></script>
     <!--JS slick carousel-->
-    <script type="text/javascript" src="../../Assets/JS/jquery-migrate.min.js"></script>
-    <script src="../../Assets/JS/slick.min.js"></script>
     <script src="../../Assets/JS/carousel.js"></script>
     <!--JS CUSTOM-->
     <script src="../../Assets/JS/navbar.js "></script>
+    <!--Validation-->
+    <script src="../Models/Validation.js"></script>
 </body>
 
 </html>
