@@ -85,7 +85,7 @@ $(document).ready(function () {
         var matKhau = $("#dkPWD").val();
         var email = $("#email").val();
         var  soDT= $("#phone").val();
-        if(taiKhoan!=""&&matKhau!=""&&ngaySinh!=""&&email!=""&&soDT!=""){
+        if(taiKhoan!=""&&matKhau!=""&&email!=""&&soDT!=""){
             alert("Bạn đã đăng ký thành công");
         }else{
             KiemTraPhanTu("#dkTaiKhoan", ".tbdkTaiKhoan", Thong_Bao_Nhap_Tai_Khoan);
