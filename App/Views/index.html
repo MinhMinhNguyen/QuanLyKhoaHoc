@@ -21,18 +21,18 @@
 
 <body>
     <header class="header header-style-1 white-navbar position-fixed">
-        <div id="top" class="bg-light">
+        <div id="top" class="bg-light section">
             <div class="container">
                 <div class="d-flex">
                     <div class="mr-auto pt-3">
-                        <div class="hotline user">SDT: 0121 596 1318</div>
+                        <div class="hotline user">Hotline: (028) 9234675</div>
                     </div>
                     <div class="pt-2">
-                        <button type="button" class="btn bg-light text-dark user" data-toggle="modal" data-target="#sign-in">
+                        <button type="button" class="btn bg-light text-dark user" id="dangnhap" data-toggle="modal" data-target="#sign-in">
                             <i class="fa fa-lock"></i>
                             <span>Đăng nhập</span>
                         </button>
-                        <button type="button" class="btn bg-light text-dark user" data-toggle="modal" data-target="#sign-up">
+                        <button type="button" class="btn bg-light text-dark user" id="dangky" data-toggle="modal" data-target="#sign-up">
                             <i class="fa fa-user"></i>
                             <span>Đăng ký</span>
                         </button>
@@ -43,7 +43,7 @@
         <div class="wrap">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="#carousel">
                         <img src="../../Assets/IMG/logo.png" alt="logo" class="logo-navbar" width="150px">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -53,14 +53,15 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Trang chủ</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#carousel">Trang chủ
+                                </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdown ">Khóa học</a>
+                                <a class="nav-link" href="#khoaHoc">Khóa học</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Thư viện</a>
+                                <a class="nav-link" href="#giangVien">Giảng viên</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Kích hoạt khóa học</a>
@@ -118,7 +119,7 @@
 
     <div class="clear"></div>
     <!--course-->
-    <section id="khoaHoc">
+    <section id="khoaHoc" class="section">
         <div class="container">
             <h3 class="khoaHoc__title text-center my-3">Khóa học hiện có tại
                 <br>
@@ -201,61 +202,61 @@
     <!--course end-->
 
     <!--lecturers-->
-    <section id="lecturers">
+    <section id="giangVien" class="section">
         <div class="container">
             <h3 class="text-center">Đội ngũ giảng viên</h3>
-            <div class="lecturers__content row">
-                <div class="lecturers__item">
+            <div class="giangVien__content row">
+                <div class="giangVien__item">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="lecturers__item__left">
+                            <div class="giangVien__item__left">
                                 <img src="../../Assets/IMG/lecturer-1.jpg" class="rounded-circle mx-auto" alt="">
                             </div>
                         </div>
                         <div class="col-md-8">
-                            <div class="lecturers__item__right">
+                            <div class="giangVien__item__right">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="lecturers__item">
+                <div class="giangVien__item">
                     <div class="row">
                         <div class="col-md-8">
-                            <div class="lecturers__item__left">
+                            <div class="giangVien__item__left">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="lecturers__item__right">
+                            <div class="giangVien__item__right">
                                 <img src="../../Assets/IMG/lecturer-2.png" class="rounded-circle mx-auto" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="lecturers__item">
+                <div class="giangVien__item">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="lecturers__item__left">
+                            <div class="giangVien__item__left">
                                 <img src="../../Assets/IMG/lecturer-3.png" class="rounded-circle mx-auto" alt="">
                             </div>
                         </div>
                         <div class="col-md-8">
-                            <div class="lecturers__item__right">
+                            <div class="giangVien__item__right">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="lecturers__item">
+                <div class="giangVien__item">
                     <div class="row">
                         <div class="col-md-8">
-                            <div class="lecturers__item__left">
+                            <div class="giangVien__item__left">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="lecturers__item__right">
+                            <div class="giangVien__item__right">
                                 <img src="../../Assets/IMG/lecturer-4.jpg" class="rounded-circle mx-auto" alt="">
                             </div>
                         </div>
@@ -267,23 +268,23 @@
     <!--lecturers end-->
 
     <!--command-->
-    <section id="command">
+    <section id="nhanXet">
         <div class="container">
             <h3 class="text-center">Nhận xét của các học viên</h3>
-            <div class="command__content row text-center">
-                <div class="lecturers__item">
+            <div class="nhanXet__content row text-center">
+                <div class="nhanXet__item">
                     <img src="../../Assets/IMG/lecturer-1.jpg" class="rounded-circle mx-auto" alt="">
                     <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus.</p>
                 </div>
-                <div class="lecturers__item">
+                <div class="nhanXet__item">
                     <img src="../../Assets/IMG/lecturer-2.png" class="rounded-circle mx-auto" alt="">
                     <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus.</p>
                 </div>
-                <div class="lecturers__item">
+                <div class="nhanXet__item">
                     <img src="../../Assets/IMG/lecturer-3.png" class="rounded-circle mx-auto" alt="">
                     <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus.</p>
                 </div>
-                <div class="lecturers__item">
+                <div class="nhanXet__item">
                     <img src="../../Assets/IMG/lecturer-4.jpg" class="rounded-circle mx-auto" alt="">
                     <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus.</p>
                 </div>
@@ -296,40 +297,41 @@
     <footer class="my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                     <div class="footer__info">
                         <ul class="nav flex-column">
-                            <li class="nav-item">IT Course</li>
-                            <li class="nav-item">Địa chỉ: 292 Hàm Tử</li>
-                            <li class="nav-item">Số điện thoại:</li>
-                            <li class="nav-item">Email:</li>
+                            <li class="nav-item nav-title">IT Course</li>
+                            <li class="nav-item pt-3">Địa chỉ: 766 Võ Văn Kiệt, Phường 1, Quận 5,
+                                <br> TP. HCM</li>
+                            <li class="nav-item pt-2">Số điện thoại: (028) 9234675</li>
+                            <li class="nav-item pt-2">Email:</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-12">
                     <div class="footer__social">
                         <ul class="nav flex-column">
-                            <li class="nav-item">Các liên kết</li>
-                            <li class="nav-item">
-                                <i class="fa fa-facebook"></i>
-                                <i class="fa fa-youtube"></i>
+                            <li class="nav-item nav-title">Các liên kết</li>
+                            <li class="nav-item pt-3">
+                                <i class="fa fa-facebook facebook"></i>
+                                <i class="fa fa-youtube youtube"></i>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-5 col-sm-12">
                     <div class="footer__subscribe">
                         <ul class="nav flex-column">
-                            <li class="nav-item">Nhận tin mới</li>
-                            <li class="nav-item">Chúng tôi sẽ gửi những tin tức, khóa học mới sớm nhất cho các bạn qua email này</li>
-                            <li class="nav-item">
+                            <li class="nav-item nav-title">Nhận tin mới</li>
+                            <li class="nav-item pt-3">Chúng tôi sẽ gửi những tin tức, khóa học mới sớm nhất cho các bạn qua email này</li>
+                            <li class="nav-item pt-2">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <i class="fa fa-envelope-o input-group-text"></i>
                                     </div>
                                     <input type="text" class="form-control" aria-label="Text input with checkbox">
                                     <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                                        <button class="btn btn-outline-secondary" type="button">Gửi</button>
                                     </div>
                                 </div>
                             </li>
@@ -342,8 +344,8 @@
     <!--footer end-->
 
     <!--copyright-->
-    <section id="copyright">
-        <h4 class="text-center display-6">Copyright &copy; Minh - Mai Website</h4>
+    <section id="copyright" class="border-top bg-dark">
+        <p class="text-center display-6 text-white py-3">Copyright &copy; Minh - Mai Website</p>
     </section>
     <!--copyright end-->
 

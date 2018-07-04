@@ -36,7 +36,7 @@ $(document).ready(function () {
         ]
     });
 
-    $('.lecturers__content').slick({
+    $('.giangVien__content').slick({
         dots: true,
         arrows: true,
         slidesToShow: 1,
@@ -45,7 +45,7 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         
     });
-    $('.command__content').slick({
+    $('.nhanXet__content').slick({
         dots: true,
         arrows: true,
         slidesToShow: 1,
