@@ -23,6 +23,12 @@
    border:none;
    background-color:#0060c8!important;
  }
+ .tbUserName{
+   display: none;
+ }
+ .tbpassword{
+   display: none;
+ }
  
  /* đặt breakpoint cho mega dropdown */
  @media screen and (min-width: 992px) {
