@@ -1,6 +1,18 @@
 $(document).ready(function() {
     // executes when HTML-Document is loaded and DOM is ready
-   
+    $(window).on("scroll", function () {
+
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 40) {
+            $("header").addClass("header-position-fixed");
+            $('#top').hide("transition: height 5s, line-height 5s, margin 5s");
+        } else {
+            $("header").removeClass("header-position-fixed");
+            $('#top').show("transition: height 5s, line-height 5s, margin 5s");
+        }
+    });
+    /*end*/
    // breakpoint and up  
    $(window).resize(function(){
        if ($(window).width() >= 980){	

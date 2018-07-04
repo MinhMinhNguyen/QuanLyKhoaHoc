@@ -1,3 +1,6 @@
+.clear{
+  clear: both;
+}
 #top{
     height: 50px;
     background-color: #E9EBEE;
@@ -5,7 +8,7 @@
 .user{
     font-size: 13px;
 }
-
+/* navbar scroll sẽ cố định trên top ẩn đăng nhập đăng ký*/
 /* thêm margin cho đường link  */
 .navbar .dropdown-menu div[class*="col"] {
     margin-bottom:1rem;
@@ -42,7 +45,7 @@
    width:100%;
    left:0;
    right:0;
-   top:75px;
+   top:80px;
  }
    
    /* chỉ cần hover sẽ show ra dropdown nav */
@@ -55,5 +58,144 @@
      background-color: #fff;
    }
  }
+ /*navbar end*/
  
- 
+/* Header Navigation */
+header{
+  width: 100%;
+  z-index: 10;
+  transition: height 5s, line-height 5s, margin 5s;
+}
+nav { 
+  min-height: 100%; 
+  font-weight: 600; 
+  text-transform: uppercase; 
+  width: 100%;
+}
+.navbar-brand{
+  width: 100px;
+}
+.nav-link { 
+  color: #676767; 
+  font-size: 13px; 
+  font-weight: 500; 
+  padding: 0 14px; 
+} 
+
+.white-navbar .nav-link{ 
+  color: #333; 
+}
+
+.white-navbar .nav-link:hover,
+.white-navbar .nav-link:active,
+.white-navbar .nav-item.active .nav-link { 
+  color: #d6b161;
+}
+
+.white-navbar.header-position-fixed .logo-navbar { 
+  background-color: transparent; 
+  background: transparent; 
+}
+
+.white-navbar.header-position-fixed .logo-navbar { 
+  transition: background-color .5s;
+  margin-top: 15px;
+}
+.white-navbar.header-position-fixed nav{
+  padding-top: 0;
+  height: 65px;
+  background-color: white;
+}
+.white-navbar.header-position-fixed .navbar-brand{
+  width: 150px;
+}
+.white-navbar.header-position-fixed .dropdown-menu{
+  top:55px;
+}
+
+/*carousel*/
+.carousel-indicators li {
+  border-radius: 50%;
+  height: 13px;
+  width: 13px;
+  margin: 2px;
+  font-weight: 800;
+  border: 2px solid #fff;
+  background-color: #b3d7ff;
+  bottom: 130px;
+}
+
+.carousel{
+  height: 700px;
+  top: 165px;
+  
+}
+.carousel-indicators .active {
+  height: 13px;
+  width: 13px;
+  background-color: #0060c8;
+}
+
+.carousel__banner{
+  position: relative;
+  top: 100%;
+  transform: translateY(-200%);
+  left: 10%;
+}
+.carousel__banner h1{
+  letter-spacing: 5px;
+  padding: 20px 0;
+}
+.carousel__banner span{
+  font-size: 20px;
+}
+/*end carousel*/
+/* Header Navigation end */
+/*intro*/
+#intro{
+  margin-top: 100px; 
+}
+#intro p{
+  padding: 20px 100px;
+}
+/*intro end*/
+/*course*/
+#khoaHoc{
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #f1f1f1;
+}
+.slick-arrow{
+  color: #0060c8 !important;
+}
+/*course end*/
+
+/*lecturer*/
+#lecturers{
+  height: 400px;
+}
+#lecturers h3{
+  padding: 50px 0;
+}
+#lecturers img{
+  width: 150px;
+  height: 150px;
+}
+/*lecturer end*/
+
+/*command*/
+#command{
+  height: 450px;
+  background-color: #f1f1f1;
+}
+#command h3{
+  padding: 50px 0;
+}
+#command img{
+  width: 150px;
+  height: 150px;
+}
+#command .slick-dots{
+  margin-top: 350px;
+}
+/*command end*/
