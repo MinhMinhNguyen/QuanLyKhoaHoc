@@ -9,6 +9,11 @@
     font-size: 13px;
 }
 /* navbar scroll sẽ cố định trên top ẩn đăng nhập đăng ký*/
+/*hover ở top*/
+#dangnhap:hover, #dangky:hover{
+  background-color: #d6b161 !important;
+  color: white !important;
+}
 /* thêm margin cho đường link  */
 .navbar .dropdown-menu div[class*="col"] {
     margin-bottom:1rem;
@@ -39,7 +44,7 @@
    width:100%;
    left:0;
    right:0;
-   top:80px;
+   top:75px;
  }
    
    /* chỉ cần hover sẽ show ra dropdown nav */
@@ -83,7 +88,7 @@ nav {
 .white-navbar .nav-link:hover,
 .white-navbar .nav-link:active,
 .white-navbar .nav-item.active .nav-link { 
-  color: #d6b161;
+  color: #d6b161 !important;
 }
 
 .white-navbar.header-position-fixed .logo-navbar { 
@@ -104,7 +109,7 @@ nav {
   width: 150px;
 }
 .white-navbar.header-position-fixed .dropdown-menu{
-  top:55px;
+  top:50px;
 }
 
 /*carousel*/
@@ -165,31 +170,47 @@ nav {
 /*course end*/
 
 /*lecturer*/
-#lecturers{
+#giangVien{
   height: 400px;
 }
-#lecturers h3{
+#giangVien h3{
   padding: 50px 0;
 }
-#lecturers img{
+#giangVien img{
   width: 150px;
   height: 150px;
 }
 /*lecturer end*/
 
 /*command*/
-#command{
+#nhanXet{
   height: 450px;
   background-color: #f1f1f1;
 }
-#command h3{
+#nhanXet h3{
   padding: 50px 0;
 }
-#command img{
+#nhanXet img{
   width: 150px;
   height: 150px;
 }
-#command .slick-dots{
+#nhanXet .slick-dots{
   margin-top: 350px;
 }
 /*command end*/
+
+/*footer*/
+footer .nav-title{
+  font-size: 30px;
+}
+.footer__social i{
+  font-size: 25px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 5px;  
+}
+.footer__social .facebook{
+  color:#4267B2
+}
+/*footer end*/
