@@ -1,7 +1,6 @@
 $(document).ready(function () {
+    /*Khóa học */
     $('.khoaHoc__content').slick({
-        dots: true,
-        arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
@@ -12,8 +11,6 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
                 }
             },
             {
@@ -30,28 +27,26 @@ $(document).ready(function () {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
+    /*khóa học end*/
 
+    /*giảng viên*/
     $('.giangVien__content').slick({
-        dots: true,
-        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        
     });
+    /*giảng viên end*/
+
+    /*nhận xét*/
     $('.nhanXet__content').slick({
-        dots: true,
-        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        
     });
+    /*nhận xét end*/
+
 });
