@@ -68,7 +68,7 @@
 /* Header Navigation */
 header{
   width: 100%;
-  z-index: 10;
+  z-index: 20;
   transition: height 5s, line-height 5s, margin 5s;
 }
 nav { 

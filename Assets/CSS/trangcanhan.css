@@ -1,0 +1,15 @@
+.jumbotron{
+    background: url("../IMG/jumbotron.jpg") center center no-repeat;
+    background-size: cover;
+    height: 550px;
+    position: relative;
+    top: 150px;
+}
+.khoaHoc__content{
+    opacity: unset;
+    margin-top: 0;
+}
+
+#gioiThieu{
+    margin-top: 215px;
+}

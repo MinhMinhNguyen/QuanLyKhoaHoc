@@ -1,8 +1,11 @@
-(function($) {
+/*
+  scroll page
+*/
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -16,7 +19,7 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -27,3 +30,31 @@
   });
 
 })(jQuery); // End of use strict
+/*
+  scroll page end
+*/
+
+/*
+  button go to top
+*/
+$(document).ready(function(){
+
+  //Check to see if the window is top if not then display button
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+          $('.scrollToTop').fadeIn();
+      } else {
+          $('.scrollToTop').fadeOut();
+      }
+  });
+
+  //Click event to scroll to top
+  $('.scrollToTop').click(function(){
+      $('html, body').animate({scrollTop : 0},800);
+      return false;
+  });
+
+});
+/*
+  button go to top end
+*/

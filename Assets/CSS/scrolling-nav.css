@@ -17,3 +17,25 @@ header {
 section {
   padding: 0;
 }
+
+/*go to top*/
+.scrollToTop{
+  width:100px; 
+  height:130px;
+  padding:10px; 
+  text-align:center; 
+  background: whiteSmoke;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  position:fixed;
+  bottom: 0;
+  right: 10px;
+  display:none;
+  background: url('../IMG/go-to-top.png') no-repeat center;
+  background-size: 50px;
+}
+.scrollToTop:hover{
+  text-decoration:none;
+}
+/*go to top end*/
