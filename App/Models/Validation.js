@@ -4,7 +4,7 @@ $(document).ready(function () {
     var Thong_Bao_Nhap_Mat_Khau = 'Vui lòng nhập mật khẩu';
     var Thong_Bao_Nhap_Tat_Ca_So = 'Vui lòng nhập số';
     var Thong_Bao_Nhap_Email = 'Vui lòng nhập email';
-    var Thong_Bao_Ngay_Sinh = 'Vui lòng nhập ngày sinh';
+    var Thong_Bao_Ho_Ten = 'Vui lòng nhập họ tên';
     var Thong_Bao_Nhap_So_DT = 'Vui lòng nhập số điện thoại';
     //
 
@@ -26,7 +26,7 @@ $(document).ready(function () {
         }
         console.log(kq);
         return kq;
-    
+
     }
 
 
@@ -71,27 +71,39 @@ $(document).ready(function () {
     function KiemTraBatBuocNhapDangNhap() {
         var taiKhoan = $("#txtTaiKhoan").val();
         var matKhau = $("#pwd").val();
-        if(taiKhoan != "" && matKhau !=''){
-            alert("Bạn đã đăng nhập thành công");
-        }else{
+        if (taiKhoan != "" && matKhau != '') {
+            swal({
+                type: 'success',
+                title: 'Đăng nhập thành công!',
+                showConfirmButton: false,
+                timer: 1000
+            })
+        } else {
             KiemTraPhanTu('#txtTaiKhoan', '.tbUserName', Thong_Bao_Nhap_Tai_Khoan);
             KiemTraPhanTu('#pwd', '.tbpassword', Thong_Bao_Nhap_Mat_Khau);
         }
 
-            
+
     }
     function KiemTraBatBuocNhapDangKy() {
         var taiKhoan = $("#dkTaiKhoan").val();
         var matKhau = $("#dkPWD").val();
+        var hoTen = $("#dkHoTen").val();
         var email = $("#email").val();
-        var  soDT= $("#phone").val();
-        if(taiKhoan!=""&&matKhau!=""&&email!=""&&soDT!=""){
-            alert("Bạn đã đăng ký thành công");
-        }else{
+        var soDT = $("#phone").val();
+        if (taiKhoan != "" && matKhau != "" && hoTen != "" && email != "" && soDT != "") {
+            swal({
+                type: 'success',
+                title: 'Đăng ký thành công!',
+                showConfirmButton: false,
+                timer: 1000
+            })
+        } else {
             KiemTraPhanTu("#dkTaiKhoan", ".tbdkTaiKhoan", Thong_Bao_Nhap_Tai_Khoan);
             KiemTraPhanTu("#dkPWD", ".tbdkPasswork", Thong_Bao_Nhap_Mat_Khau);
+            KiemTraPhanTu("#dkHoTen", ".tbdkHoTen", Thong_Bao_Ho_Ten);
             KiemTraEmail("#email", ".tbdkemail", Thong_Bao_Nhap_Email);
-            KiemTraPhanTu("#phone",".tbdksodt",Thong_Bao_Nhap_So_DT);
+            KiemTraPhanTu("#phone", ".tbdksodt", Thong_Bao_Nhap_So_DT);
         }
     }
 
